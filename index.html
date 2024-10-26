@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ядерная Зима</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CRT эффект -->
+  <div class="crt-overlay">
+    <div class="crt-scanlines"></div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="container">
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+      <div>СТАТУС: АКТИВЕН</div>
+      <div id="date-time"></div>
+      <div>РЕЖИМ: БОЕВОЙ</div>
+    </div>
+
+    <!-- Радиационный знак и заголовок -->
+    <div class="hero">
+      <div class="icon-container">
+        <div class="radiation-icon"></div>
+      </div>
+      <h1 id="glitch-text" class="title">ЯДЕРНАЯ ЗИМА</h1>
+
+      <!-- Панель мониторинга -->
+      <div class="metrics">
+        <div class="metric">
+          <div class="icon radio"></div>
+          <div id="radiation">100 мР/ч</div>
+          <small>РАДИАЦИОННЫЙ ФОН</small>
+        </div>
+        <div class="metric">
+          <div class="icon thermometer"></div>
+          <div id="temperature">-23.0°C</div>
+          <small>ТЕМПЕРАТУРА</small>
+        </div>
+        <div class="metric">
+          <div class="icon wind"></div>
+          <div id="wind-speed">15 м/с</div>
+          <small>ВЕТЕР</small>
+        </div>
+      </div>
+
+      <!-- Платформы -->
+      <div class="platforms">
+        <div class="platform">PC</div>
+        <div class="platform">Mobile</div>
+      </div>
+
+      <!-- Кнопка -->
+      <button class="cta-button">НАЧАТЬ ВЫЖИВАНИЕ</button>
+    </div>
+
+    <!-- Характеристики -->
+    <section class="features">
+      <h2 class="section-title">ХАРАКТЕРИСТИКИ</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <div class="icon clock"></div>
+          <h3>20+ часов геймплея</h3>
+          <p>Исследуйте руины некогда великой державы</p>
+        </div>
+        <div class="feature">
+          <div class="icon users"></div>
+          <h3>Множество персонажей</h3>
+          <p>Встречайте выживших в бункерах и заброшенных городах</p>
+        </div>
+        <div class="feature">
+          <div class="icon book-open"></div>
+          <h3>Нелинейный сюжет</h3>
+          <p>Каждое решение приближает или отдаляет ядерную зиму</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
